@@ -1,0 +1,19 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        prefix: /config-server
+        git:
+          uri: https://github.com/ngocson18081195/config-repo
+          searchPaths: master
+    bus:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
