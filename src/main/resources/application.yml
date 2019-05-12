@@ -1,5 +1,6 @@
 server:
   port: 8761
+
 spring:
   application:
     name: configserver
@@ -10,6 +11,10 @@ spring:
         git:
           uri: https://github.com/ngocson18081195/config-repo
           searchPaths: master
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 #    bus:
 #      enabled: true
 #  rabbitmq:
