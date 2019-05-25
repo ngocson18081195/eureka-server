@@ -10,7 +10,7 @@ spring:
         prefix: /config-server
         git:
           uri: https://github.com/ngocson18081195/config-repo
-          searchPaths: master/
+          searchPaths: master/, product-service/
 eureka:
   client:
     register-with-eureka: false
